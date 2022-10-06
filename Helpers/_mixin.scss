@@ -1,0 +1,30 @@
+@mixin textStyle($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button ($color) {
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: $color;
+    box-shadow: 0 0 0 2rem $bg-button-color inset;
+    background: transparent;
+    transition: all .3s;
+    font-weight: 600;
+    &:hover{
+        box-shadow: 0 0 0 1px $bg-button-color inset;
+        color: #f8b653;
+    }
+}
+
+@mixin title{
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    margin: 0 auto;
+}

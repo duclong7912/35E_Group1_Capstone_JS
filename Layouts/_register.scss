@@ -1,0 +1,129 @@
+.register{
+    padding-top: 50px;
+    .register__container{
+        max-width: 80%;
+        margin: auto;
+    }
+    .register__title{
+        h2{
+            &::before{
+                @include title;
+                left: 49%;
+                bottom: -8px;
+                transform: translateX(-50%);
+            }
+            &::after{
+                @include title;
+                left: 48%;
+                bottom: -15px;
+            }
+        }
+        h2{
+            text-align: center;
+            @include textStyle($main-color, $fs-4, $fw-7);
+            position: relative;
+        }
+    }
+
+    .register__content{
+        padding-top: 50px;
+
+        .register__form{
+            .col-6{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                label{
+                    margin-right: 20px;
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+
+                    span{
+                        @include textStyle($text-color-1, $fs-2, $fw-5);
+                    }
+                }
+                span{
+                    position: absolute;
+                    right: 60px;
+                    color: #F50E0E;
+                }
+            }
+            .col-6{
+                &:last-child{
+                    padding-left: 75px;
+                    justify-content: start;
+
+                    span{
+                        position: inherit;
+                    }
+                }
+
+            }
+            input{
+                padding: 10px 20px;
+                outline: none;
+                outline: none;
+                border: unset;
+                border-bottom: 3px solid #AE18E2;
+                width: 450px;
+            }
+
+            #male{
+                width: 20px;
+                margin-right: 5px;
+                display: none;
+
+                &:checked{
+                    + .radio::after{
+                        transform: scale(1);
+                    }
+                }
+            }
+            #female{
+                width: 20px;
+                display: none;
+
+                &:checked{
+                    + .radio::after{
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            .radio{
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                border: 3px solid #D9D9D9;
+                margin: 0 10px;
+                padding: 2px;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #AE18E2;
+                    display: block;
+                    border-radius: 50%;
+                    transform: scale(0);
+                    transition: all .2s;
+                }
+            }
+            .register__button{
+                text-align: center;
+                button{
+                    @include button($text-color-2);
+                    padding: 10px 60px;
+                    box-shadow: 0 0 0 2rem #AE18E2 inset;
+
+                    &:hover{
+                        box-shadow: 0 0 0 2px #AE18E2 inset;
+                        color: $text-color-1;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,42 @@
+header {
+    background: $header-bg-color;
+    .header__container{
+        width: 1280px;
+        margin: auto;
+        padding: 10px 0;
+    }
+    .header__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__right {
+            display: flex;
+            align-items: center;
+            .header__cart{
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                img{
+                    width: 25px;
+                }
+                span{
+                    @include textStyle($text-color-2, $fs-1, $fw-3);
+                }
+            }
+            .header__login{
+                a{
+                    color: $text-color-3;
+                    transition: all .5s;
+                    &:hover{
+                        text-decoration: none;
+                        color: #f8b653;
+                    }
+                }
+                a:first-child{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
