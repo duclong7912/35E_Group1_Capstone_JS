@@ -525,4 +525,108 @@ footer .footer__content .footer__wrapper a:hover {
 .register .register__content .register__form .register__button button:hover {
   box-shadow: 0 0 0 2px #AE18E2 inset;
   color: #000000;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    max-width: 100%;
+  }
+  header .header__container {
+    width: 90%;
+  }
+  header .header__container .header__img a img {
+    width: 80px;
+  }
+  header .header__container .header__right .header__cart img {
+    width: 20px;
+  }
+  header .header__container .header__right .header__cart span {
+    font-size: 13px;
+  }
+  header .header__container .header__right .header__login a {
+    font-size: 13px;
+  }
+  nav {
+    max-width: 100%;
+  }
+  nav .nav__container {
+    width: 90%;
+  }
+  nav .nav__container .nav__list li {
+    margin: 0 10px;
+  }
+  nav .nav__container .nav__list li a {
+    font-size: 13px;
+  }
+  .carousel {
+    padding-top: 50px;
+  }
+  .carousel .carousel__content {
+    flex-direction: column;
+  }
+  .carousel .carousel__content .carousel__info {
+    text-align: center;
+    padding: 0 70px;
+  }
+  .carousel .carousel__content .carousel__info h2 {
+    font-size: 25px;
+  }
+  .carousel .carousel__content .carousel__info p {
+    font-size: 15px;
+  }
+  .carousel .carousel__img img {
+    width: 100%;
+    padding-left: 100px;
+  }
+  .carousel .carousel__dot {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+  }
+  .carousel .polygon1 img {
+    width: 70%;
+  }
+  .carousel .polygon2 img {
+    width: 70%;
+  }
+  .product .product__title h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 576px) {
+  header {
+    max-width: 100%;
+  }
+  header .header__container {
+    width: 90%;
+  }
+  nav {
+    max-width: 100%;
+  }
+  nav .nav__container {
+    width: 90%;
+  }
+  .carousel .carousel__content {
+    flex-direction: column;
+  }
+  .carousel .carousel__img img {
+    width: 85%;
+    padding-left: 100px;
+  }
+  .carousel .carousel__info {
+    text-align: center;
+  }
+  .carousel .carousel__dot {
+    position: absolute;
+    left: 50%;
+    bottom: 90px;
+    transform: translateX(-50%);
+  }
+  .carousel .polygon1 img {
+    width: 80%;
+  }
+  .carousel .polygon2 img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=main.css.map */
