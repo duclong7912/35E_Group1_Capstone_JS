@@ -1,0 +1,148 @@
+// Responsive
+@include responsive2('small') {
+    // Header
+    header{
+        max-width: 100%;
+        .header__container{
+            width: 90%;
+            .header__img{
+                a{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+            .header__right{
+                .header__cart{
+                    img{
+                        width: 20px;
+                    }
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                .header__login{
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    // Nabar
+    nav{
+        max-width: 100%;
+        .nav__container{
+            width: 90%;
+            .nav__list{
+                li{
+                    margin: 0 10px;
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Carousel
+    .carousel{
+        padding-top: 50px;
+        .carousel__content{
+            flex-direction: column;
+            .carousel__info{
+                text-align: center;
+                padding: 0 70px;
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .carousel__img{
+           img{
+            width: 100%;
+            padding-left: 100px;
+           }
+        }
+        .carousel__dot{
+            position: absolute;
+            left: 50%;
+            bottom: 90px;
+            transform: translateX(-50%);
+        }
+        .polygon1{
+           img{
+            width: 70%;
+           }
+        }
+        .polygon2{
+            img{
+                width: 70%;
+               }
+        }
+    }
+
+    // Product
+    .product{
+        .product__title{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+// Width < 992px
+
+@include responsive('extra-large', 'small'){
+    // Header
+    header{
+        max-width: 100%;
+        .header__container{
+            width: 90%;
+        }
+    }
+    // Nabar
+    nav{
+        max-width: 100%;
+        .nav__container{
+            width: 90%;
+        }
+    }
+
+    // Carousel
+    .carousel{
+        // padding-top: 50px;
+        .carousel__content{
+            flex-direction: column;
+        }
+        .carousel__img{
+           img{
+            width: 85%;
+            padding-left: 100px;
+           }
+        }
+        .carousel__info{
+            text-align: center;
+        }
+        .carousel__dot{
+            position: absolute;
+            left: 50%;
+            bottom: 90px;
+            transform: translateX(-50%);
+        }
+        .polygon1{
+           img{
+            width: 80%;
+           }
+        }
+        .polygon2{
+            img{
+                width: 80%;
+               }
+        }
+    }
+}
