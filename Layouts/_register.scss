@@ -29,7 +29,7 @@
         padding-top: 50px;
 
         .register__form{
-            .col-6{
+            .col-12{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -50,11 +50,21 @@
                     color: #F50E0E;
                 }
             }
-            .col-6{
+            .col-12{
                 &:last-child{
-                    padding-left: 75px;
-                    justify-content: start;
+                    // padding-left: 75px;
+                    justify-content: center;
 
+                    span{
+                        position: inherit;
+                    }
+                }
+
+            }
+            .col-lg-6{
+                &:last-child{
+                    padding-right: 90px;
+                    margin-top: 35px !important;
                     span{
                         position: inherit;
                     }

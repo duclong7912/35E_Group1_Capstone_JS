@@ -4,16 +4,15 @@
         max-width: 1200px;
         margin: auto;
     }
-    .col-4{
+    .col-lg-4{
         display: flex;
         justify-content: center;
         align-items: center;
-        .infoProDuct__img{
-            padding: 80px 25px;
-            background-color: #F8F8F8;
-            border-radius: 10px;
-        }
-
+    }
+    .infoProDuct__img{
+        padding: 80px 25px;
+        background-color: #F8F8F8;
+        border-radius: 10px;
     }
     .infoProDuct__wrapper{
         width: 650px;

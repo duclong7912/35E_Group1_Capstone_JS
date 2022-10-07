@@ -93,9 +93,60 @@
             }
         }
     }
+
+    // Info Product
+    .infoProDuct{
+        max-width: 100%;
+        padding-top: 50px;
+        .infoProDuct__container{
+            width: 85%;
+            margin: auto;
+        }
+        .infoProDuct__img{
+            text-align: center;
+        }
+        .infoProDuct__wrapper{
+            width: 100%;
+            padding-top: 20px;
+        }
+        .infoProDuct__info{
+            p{
+                font-size: 14px;
+            }
+            h5{
+                text-align: center;
+            }
+        }
+    }
+
+    // Register 
+
+    .register{
+        max-width: 100%;
+        .register__container{
+            width: 80%;
+            margin: auto;
+        }
+
+        .register__content{
+            .register__form{
+                input{
+                    width: 80%;
+                }
+
+                .col-12{
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+
 }
 
-// Width < 992px
+// Width < 1200px
 
 @include responsive('extra-large', 'small'){
     // Header
@@ -145,4 +196,50 @@
                }
         }
     }
+
+    // Info Product
+    .infoProDuct{
+        max-width: 100%;
+        padding-top: 50px;
+        .infoProDuct__container{
+            width: 85%;
+            margin: auto;
+        }
+        .infoProDuct__img{
+            text-align: center;
+        }
+        .infoProDuct__wrapper{
+            width: 100%;
+            padding-top: 20px;
+        }
+        .infoProDuct__info{
+            p{
+                font-size: 14px;
+            }
+            
+        }
+    }
+    .register{
+        max-width: 100%;
+        .register__container{
+            width: 80%;
+            margin: auto;
+        }
+
+        .register__content{
+            .register__form{
+                input{
+                    width: 80%;
+                }
+
+                .col-12{
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+            }
+            
+        }
+    }
+
 }
