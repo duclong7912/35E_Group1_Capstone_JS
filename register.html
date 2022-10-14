@@ -67,41 +67,42 @@
                 <div class="register__form">
                     <form class="row">
                         <div class="col-12 mt-2 col-lg-6">
-                            <input type="email" placeholder="Email">
-                            <span>(*)</span>
+                            <input type="email" placeholder="Email" id="email">
+                            <span id="err1">(*)</span>
                         </div>
                         <div class="col-12 col-lg-6 mt-2">
-                            <input type="text" placeholder="Name">
-                            <span>(*)</span>
+                            <input type="text" placeholder="Name" id="name">
+                            <span id="err2">(*)</span>
                         </div>
                         <div class="col-12 mt-2 col-lg-6">
-                            <input type="password" placeholder="Password" >
-                            <span>(*)</span>
+                            <input type="password" placeholder="Password" id="password" >
+                            <span id="err3">(*)</span>
                         </div>
                         <div class="col-12 mt-2 col-lg-6">
-                            <input type="number" placeholder="Phone">
-                            <span>(*)</span>
+                            <input type="number" placeholder="Phone" id="phone">
+                            <span id="err4">(*)</span>
                         </div>
                         <div class="col-12 mt-2 col-lg-6">
-                            <input type="password" placeholder="Password confirm">
-                            <span>(*)</span>
+                            <input type="password" placeholder="Password confirm" id="confirmPass">
+                            <span id="err5">(*)</span>
                         </div>
                         <div class="col-12 mt-2 col-lg-6"> 
-                            <label for="male"> 
+                            <label for="male" > 
                                 <span>Gender</span>
                                 <input type="radio" name="gender" id="male">
-                                <div class="radio"></div>
+                                <div class="radio" id="mal"></div>
                                 <span>Male</span>
                             </label>
-                            <label for="female">
+                            <label for="female" >
                                 <input type="radio" name="gender" id="female">
-                                <div class="radio"></div>
+                                <div class="radio" id="fem"></div>
                                 <span>Female</span>
                             </label>
+                            <div><span id="err6"></span></div>
                         </div>                       
                     </form>
                     <div class="register__button mt-5">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="regButton">Submit</button>
                     </div>
                 </div>
             </div>
@@ -195,6 +196,8 @@
     <!-- Axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Our JS -->
+    <script src="./models/User.js"></script>
+    <script src="./models/validation.js"></script>
     <script src="./js/register.js"></script>
 </body>
 </html>
