@@ -1,0 +1,53 @@
+@mixin textStyle($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button ($color) {
+    outline: none;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: $color;
+    box-shadow: 0 0 0 2rem $bg-button-color inset;
+    background: transparent;
+    transition: all .3s;
+    font-weight: 600;
+    &:hover{
+        box-shadow: 0 0 0 1px $bg-button-color inset;
+        color: #f8b653;
+    }
+}
+
+@mixin title{
+    content: '';
+    width: 60px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    margin: 0 auto;
+}
+
+@mixin responsive($screen, $minWidth) {
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get($map: $breakpoints, $key: $screen);
+        $value2: map-get($map: $breakpoints, $key: $minWidth);
+        @media screen and (max-width: $value) and (min-width: $value2) {
+            @content;
+        }
+    } @else{
+        @warn "`{$screen}` isn't in breakpoints";
+    }
+};
+
+@mixin responsive2($screen) {
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    } @else{
+        @warn "`{$screen}` isn't in breakpoints";
+    }
+};

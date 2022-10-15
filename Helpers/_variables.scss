@@ -1,0 +1,45 @@
+// Font size
+
+$fs-1: 16px;
+$fs-2: 20px;
+$fs-3: 30px;
+$fs-4: 40px;
+$fs-5: 24px;
+
+// Color
+
+$header-bg-color: #000000;
+$main-color: #f8b653;
+$text-color-1: #000000;
+$text-color-2: #FFFFFF;
+$text-color-3: #c5c5c5;
+$text-color-4: #1ED90E;
+$text-color-5: #FC0303;
+$bg-button-color: #f8b653;
+$bg-button-color-2: #E1B067;
+$bg-size-color: #CCCCCC;
+$bg-item: #F8F8F8;
+$info-product-color: #CBC9C9;
+$btn-price-color: #DEDDDC;
+$btn-submit-color: #AE18E2;
+
+
+
+// Font Weight
+
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+$fw-9: 900;
+
+// Break point
+
+$breakpoints: (
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+)
