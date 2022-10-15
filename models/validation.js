@@ -57,6 +57,6 @@ function Validation(){
         document.getElementById(error).innerHTML = mess;
         
         return false;
-     }
+     };
 
 }
