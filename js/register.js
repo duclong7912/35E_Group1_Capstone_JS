@@ -37,11 +37,6 @@ document.getElementById("regButton").onclick = function () {
 
 
 
-
-
-
-
-
     if (isValid) {
         var user = new Users();
 
