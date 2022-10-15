@@ -1,0 +1,17 @@
+// Mixin + Variables
+@import "./../Helpers/variables";
+@import "./../Helpers/mixin";
+
+// Global
+@import "./../Base/global";
+
+
+// Layout
+@import "./../Layouts/header";
+@import "./../Layouts/navbar";
+@import "./../Layouts/carousel";
+@import "./../Layouts/product";
+@import "./../Layouts/footer";
+@import "./../Layouts/infoProDuct";
+@import "./../Layouts/register";
+@import "./../Layouts/responsive";

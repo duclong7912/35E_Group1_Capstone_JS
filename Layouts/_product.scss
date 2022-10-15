@@ -1,0 +1,89 @@
+.product{
+    padding: 100px 0;
+    .product__container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .product__content{
+        padding-top: 50px;
+    }
+    .product__title{
+        h2{
+            &::before{
+                @include title;
+                left: 49%;
+                bottom: -8px;
+                transform: translateX(-50%);
+            }
+            &::after{
+                @include title;
+                left: 48%;
+                bottom: -15px;
+            }
+        }
+        h2{
+            @include textStyle($main-color, $fs-4, $fw-7);
+            position: relative;
+        }
+    }
+    .col-4 {
+        margin-top: 40px;
+    }
+    .product__item{
+        background-color: $bg-item;
+        border-radius: 10px;
+        .product__head{
+            max-width: 90%;
+            max-height: 250px;
+            margin: auto;
+        }
+        .product__body{
+            padding: 0 20px;
+            h6{
+                font-size: $fs-2;
+                text-align: left;
+                height: 50px;
+            }
+            p{
+                text-align: left;
+                color: $info-product-color;
+                font-weight: $fw-3;
+                height: 70px;
+            }
+        }
+        .product__footer{
+            display: flex;
+            justify-content: space-between;
+
+            a{
+                @include button($text-color-1);
+                border-radius: 0 0 0 10px;
+                width: 50%;
+                padding: 15px 5px;
+                
+                button{
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    font-weight: 600;
+                }
+            }
+            .product__price{
+                padding: 15px 25px;
+                width: 50%;
+                background-color: #DEDDDC;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0 0 10px 0;
+                h6{
+                    font-size: $fs-2;
+                    margin: 0;
+                    font-weight: $fw-7;
+                }
+            }
+        }
+    }
+    
+}
