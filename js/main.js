@@ -5,7 +5,7 @@ window.onload = function () {
 function getInfoProduct() {
   var promise = axios({
     url: "https://shop.cyberlearn.vn/api/Product",
-    metthod: "GET",
+    method: "GET",
   });
 
   promise.then(function (res) {
