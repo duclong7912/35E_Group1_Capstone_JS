@@ -1,8 +1,8 @@
 var flag = null;
-document.getElementById("mal").onclick = function () {
+document.getElementById("male").onclick = function () {
     flag = true;
 };
-document.getElementById("fem").onclick = function () {
+document.getElementById("female").onclick = function () {
     flag = false;
 };
 
@@ -19,19 +19,19 @@ document.getElementById("regButton").onclick = function () {
 
     var isValid = true;
 
-    isValid &= validation.kiemTraRong(email,"err1", "(*)vui long nhap email")&&validation.kiemTraDinhDang(email,"err1", "(*)vui long nhap email hop le",validation.dangEmail );
+    isValid &= validation.kiemTraRong(email,"err1", "(*)Vui lòng nhập Email")&&validation.kiemTraDinhDang(email,"err1", "(*)Vui lòng nhập Email hợp lệ",validation.dangEmail );
 
-    isValid &= validation.kiemTraRong(name,"err2", "(*)vui long nhap ten")&&
-    validation.kiemTraDinhDang(name,"err2","(*)vui long nhap ten hop le", validation.dangChuViet);
+    isValid &= validation.kiemTraRong(name,"err2", "(*)Vui lòng nhập tên")&&
+    validation.kiemTraDinhDang(name,"err2","(*)Vui lòng nhập tên hợp lệ", validation.dangChuViet);
 
-    isValid &= validation.kiemTraRong(password,"err3", "(*)vui long nhap mat khau")&&validation.kiemTraDinhDang(password,"err3", "(*)Vui lòng nhập password 6-24 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt",validation.dangMatKhau)&&validation.kiemTraKyTu(password, "err3", "(*)Vui lòng nhập password 6-24 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt", 6,24);
+    isValid &= validation.kiemTraRong(password,"err3", "(*)Vui lòng nhập mật khẩu")&&validation.kiemTraDinhDang(password,"err3", "(*)Password 6-24 ký tự(1 ký tự số, <br> 1 ký tự in hoa, 1 ký tự đặc biệt)",validation.dangMatKhau)&&validation.kiemTraKyTu(password, "err3", "(*)Password 6-24 ký tự(1 ký tự số, <br> 1 ký tự in hoa, 1 ký tự đặc biệt)", 6,24);
 
-    isValid &= validation.kiemTraRong(phone,"err4", "(*)vui long nhap so dien thoai")&&validation.kiemTraDinhDang(phone,"err4", "(*)vui long nhap so dien thoai hop le",validation.dangso);
+    isValid &= validation.kiemTraRong(phone,"err4", "(*)Vui lòng nhập số điện thoại")&&validation.kiemTraDinhDang(phone,"err4", "(*)Vui lòng nhập số điện thoại hợp lệ",validation.dangso);
 
-    isValid &= validation.kiemTraRong(confirmPass,"err5", "(*)vui long nhap lại mat khau")&&
-    validation.kiemTraDinhDang(confirmPass,"err5", "(*)Vui lòng nhập password 6-24 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt",validation.dangMatKhau)&&validation.kiemTraKyTu(confirmPass, "err5", "(*)Vui lòng nhập password 6-24 ký tự chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt", 6,24)&&validation.confirmPass(confirmPass,password,"err5", "(*)mat khau khong trung khop" );
+    isValid &= validation.kiemTraRong(confirmPass,"err5", "(*)Vui lòng nhập lại mật khẩu")&&
+    validation.kiemTraDinhDang(confirmPass,"err5", "(*)Password 6-24 ký tự(1 ký tự số, <br> 1 ký tự in hoa, 1 ký tự đặc biệt)",validation.dangMatKhau)&&validation.kiemTraKyTu(confirmPass, "err5", "(*)Password 6-24 ký tự(1 ký tự số, <br> 1 ký tự in hoa, 1 ký tự đặc biệt)", 6,24)&&validation.confirmPass(confirmPass,password,"err5", "(*)Mật khẩu không trùng khớp" );
 
-    isValid &= validation.kiemTraGioiTinh(flag,"err6", "(*)vui long chon gioi tinh");
+    isValid &= validation.kiemTraGioiTinh(flag,"err6", "(*)Vui lòng chọn giới tính");
 
 
 

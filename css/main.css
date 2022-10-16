@@ -463,24 +463,43 @@ footer .footer__content .footer__wrapper a:hover {
   color: #000000;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 .register .register__content .register__form .col-12 span {
   position: absolute;
   right: 60px;
   color: #F50E0E;
+  font-size: 15px;
+}
+.register .register__content .register__form .col-12 #selectGender {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
 }
 .register .register__content .register__form .col-12:last-child {
   justify-content: center;
+  flex-direction: column;
 }
 .register .register__content .register__form .col-12:last-child span {
   position: inherit;
 }
 .register .register__content .register__form .col-lg-6:last-child {
-  padding-right: 90px;
   margin-top: 35px !important;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 55px;
 }
 .register .register__content .register__form .col-lg-6:last-child span {
   position: inherit;
+}
+.register .register__content .register__form .col-lg-6:last-child label div {
+  cursor: pointer;
+}
+.register .register__content .register__form .col-lg-6:last-child .gender {
+  display: flex;
+  align-items: center;
 }
 .register .register__content .register__form input {
   padding: 10px 20px;
@@ -645,9 +664,6 @@ footer .footer__content .footer__wrapper a:hover {
   .register .register__content .register__form input {
     width: 80%;
   }
-  .register .register__content .register__form .col-12:last-child {
-    padding: 0;
-  }
 }
 @media screen and (max-width: 1200px) and (min-width: 576px) {
   header {
@@ -711,8 +727,5 @@ footer .footer__content .footer__wrapper a:hover {
   }
   .register .register__content .register__form input {
     width: 80%;
-  }
-  .register .register__content .register__form .col-12:last-child {
-    padding: 0;
   }
 }/*# sourceMappingURL=main.css.map */

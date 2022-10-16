@@ -42,18 +42,26 @@
 
                     span{
                         @include textStyle($text-color-1, $fs-2, $fw-5);
+                        cursor: pointer;
                     }
                 }
                 span{
                     position: absolute;
                     right: 60px;
                     color: #F50E0E;
+                    font-size: 15px
+                }
+                #selectGender{
+                    @include textStyle($text-color-1, $fs-2, $fw-5);
+                    margin-right: 20px;
                 }
             }
+            
             .col-12{
                 &:last-child{
                     // padding-left: 75px;
                     justify-content: center;
+                    flex-direction: column;
 
                     span{
                         position: inherit;
@@ -63,10 +71,23 @@
             }
             .col-lg-6{
                 &:last-child{
-                    padding-right: 90px;
+                    // padding-right: 90px;
                     margin-top: 35px !important;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-left: 55px;
                     span{
                         position: inherit;
+                    }
+                    label{
+                        div{
+                            cursor: pointer;
+                        }
+                    }
+                    .gender{
+                        display: flex;
+                        align-items: center;
                     }
                 }
 
