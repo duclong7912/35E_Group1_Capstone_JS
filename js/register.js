@@ -63,6 +63,7 @@ document.getElementById("regButton").onclick = function () {
 
         promise.then(function (result) {
             console.log("use", user);
+
         });
         promise.catch(function (err) {
             console.log(err.response?.data);
