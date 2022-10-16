@@ -134,11 +134,19 @@
                     width: 80%;
                 }
 
-                // .col-12{
-                //     &:last-child{
-                //         padding: 0;
-                //     }
-                // }
+                .col-12{
+                    &:last-child{
+                        padding-left: 20px;
+                        #selectGender{
+                            font-size: 16px;
+                        }
+                        label {
+                            span{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
             }
             
         }
